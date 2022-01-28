@@ -5,7 +5,11 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
     <div>
-      <h1>Welcome to Next app</h1>
+      <Head>
+        <title>WebDev Newz</title>
+        <meta name='keywords' content='web development, programming'/>
+      </Head>
+      <h1>Welcome to Next</h1>
     </div>
   )
 }
