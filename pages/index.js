@@ -1,14 +1,18 @@
+/* eslint-disable react/jsx-key */
 import Head from 'next/head'
+import ArticleList from '../components/ArticleList'
 
 export default function Home({ articles }) {
-  console.log(articles)
   return (
     <div>
       <Head>
         <title>WebDev Newz</title>
         <meta name='keywords' content='web development, programming'/>
       </Head>
-      <h1>Welcome to Next</h1>
+      <ArticleList articles={articles}/>
+      {/* {articles.map((article) => (
+        <h3>{article.title}</h3>
+      ))} */}
     </div>
   )
 }
