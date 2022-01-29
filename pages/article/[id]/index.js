@@ -1,6 +1,7 @@
 import {server} from '../../../config'
 import Link from 'next/link';
 import React from 'react';
+import Meta from '../../../components/Meta'
 // import PropTypes from 'prop-types';
 // import { useRouter } from 'next/router';
 
@@ -11,6 +12,7 @@ const article = ({ article }) => {
     //     <div>This is {article.id} article.</div>
     // );
     return <>
+        <Meta title={article.title} description={article.excerpt}/>
         <h1>{article.title}</h1>
         <p>{article.body}</p>
         <br/>
