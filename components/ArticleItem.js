@@ -4,7 +4,6 @@ import articleStyles from '../styles/Article.module.css'
 import Link from 'next/link'
 
 const ArticleItem = ({article}) => {
-    console.log(article.id)
     return (
         <Link href={`/article/${article.id}`}>
             <a className={articleStyles.card}>
